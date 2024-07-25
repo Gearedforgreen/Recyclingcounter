@@ -6,22 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recycling Counter</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
+            background-color: #000000;
+            color: #00ff00;
+            font-family: 'Montserrat', sans-serif;
+        }
+        #title {
+            font-size: 2em;
+            margin-bottom: 20px;
         }
         #counter {
             font-size: 4em;
             font-weight: bold;
         }
+        #subtitle {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
+    <div id="title">WE HAVE RECYCLED</div>
     <div id="counter">1,626,758,000,000</div>
+    <div id="subtitle">BILLION POUNDS OF RECYCLABLES</div>
 
     <script>
         let count = 1626758000000;
