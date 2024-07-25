@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recycling Counter</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #counter {
+            font-size: 4em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="counter">1,626,758,000,000</div>
+
+    <script>
+        let count = 1626758000000;
+        const increment = 5;
+
+        function updateCounter() {
+            count += increment;
+            document.getElementById('counter').innerText = count.toLocaleString();
+        }
+
+        setInterval(updateCounter, 1000);
+    </script>
+</body>
+</html>
